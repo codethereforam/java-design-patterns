@@ -5,6 +5,7 @@ package priv.thinkam.creational.simplefactory;
  */
 public class UserDAOFactory {
 
+	//静态工厂方法
 	public static UserDAO createUserDAO(String database) {
 		UserDAO userDAO = null;
 		switch (database) {

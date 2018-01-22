@@ -5,6 +5,7 @@ package priv.thinkam.creational.abstractfactory.example2;
  */
 public class Main {
 
+	//可将数据库名写到配置文件中
 	public static void main(String[] args) {
 		System.out.println("==== if mysql ====");
 		DataAccess dataAccess1 = new DataAccess(DataAccess.MYSQL);

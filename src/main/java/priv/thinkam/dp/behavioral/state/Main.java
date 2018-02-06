@@ -7,10 +7,7 @@ package priv.thinkam.dp.behavioral.state;
 public class Main {
 
 	public static void main(String[] args) {
-		Study study = new Study(new NormalState());
-		study.program();
-		study.program();
-		study.program();
+		Programmer programmer = new Programmer(new NormalState());
+		programmer.work();
 	}
-
 }

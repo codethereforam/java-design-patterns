@@ -6,8 +6,9 @@ package priv.thinkam.dp.behavioral.state;
  */
 public class FixBugState implements State {
 	@Override
-	public void program(Study study) {
+	public void program(Programmer programmer) {
 		System.out.println("bug fixed, ha ha ha....");
 		System.out.println("bug fixed, ha ha ha....");
+		programmer.setCurrentState(new NormalState());
 	}
 }

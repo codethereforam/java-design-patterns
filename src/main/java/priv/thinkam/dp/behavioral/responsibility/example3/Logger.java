@@ -18,9 +18,9 @@ public abstract class Logger {
 	}
 
 	public void log(String message, Level priority) {
-		if(priority.getNumber() <= level.getNumber()) {
+		if (priority.getNumber() <= level.getNumber()) {
 			writeMessage(message);
-			if(next != null) {
+			if (next != null) {
 				next.log(message, priority);
 			}
 		}

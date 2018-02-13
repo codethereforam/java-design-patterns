@@ -17,7 +17,7 @@ public class FilterChain {
 	}
 
 	public void doFilter(Request request, Response response, FilterChain filterChain) {
-		if(index == filters.size()) {
+		if (index == filters.size()) {
 			return;
 		}
 

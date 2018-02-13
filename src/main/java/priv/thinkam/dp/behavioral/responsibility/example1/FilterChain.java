@@ -17,7 +17,7 @@ public class FilterChain implements Filter {
 
 	@Override
 	public String doFilter(String string) {
-		for(Filter filter : filters) {
+		for (Filter filter : filters) {
 			string = filter.doFilter(string);
 		}
 		return string;

@@ -7,9 +7,9 @@ package priv.thinkam.dp.structural.proxy;
 public class Main {
 
 	public static void main(String[] args) {
-		Browser browser = new Browser(new ProxySoftware());
+        Browsable browsable = new ProxySoftware(new Browser());
 		BlockedSite google = new BlockedSite();
-		String blockedContent = browser.browse(google);
+		String blockedContent = browsable.browse(google);
 		System.out.println(blockedContent);
 	}
 

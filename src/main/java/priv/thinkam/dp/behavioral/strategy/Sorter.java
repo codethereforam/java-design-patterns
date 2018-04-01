@@ -1,7 +1,9 @@
 package priv.thinkam.dp.behavioral.strategy;
 
 /**
- * Created by thinkam on 1/29/18.
+ *
+ * @author thinkam
+ * @date 1/29/18
  */
 public class Sorter {
 	private BaseSortStrategy sortStrategy;

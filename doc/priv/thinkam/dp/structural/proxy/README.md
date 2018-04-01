@@ -5,8 +5,8 @@
 
 - 角色
     - Subject(定义RealSubject 和Proxy的共用接口) -- Browsable
-    - Proxy(保存一个引用使得代理可以访问实体) -- Browser
-    - RealSubject(定义Proxy所代表的实体) -- ProxySoftware
+    - Proxy(保存一个引用使得代理可以访问实体) -- ProxySoftware
+    - RealSubject(定义Proxy所代表的实体) -- Browser
 
 - 实例
     - jdk实例
@@ -15,12 +15,21 @@
     - other
         - 快捷方式
         - Internet censorship circumvention
+        - Spring AOP
 
 - 常见情景
+    - 智能指引：调用真实对象时代理处理其他事，例如事务，日志，检查权限
     - 远程代理：为一个对象在不同的地址空间提供局部代表
     - 虚代理：根据需要创建开销很大的对象
     - 保护代理：控制对原始对象的访问
-    - 智能指引：取代了简单的指针，它在访问对象时执行一些附加操作
+
+- 分类
+    - 静态代理
+        - 继承
+        - 聚合
+    - 动态代理
+        - jdk代理
+        - cglib库
 
 
 

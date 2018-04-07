@@ -16,7 +16,7 @@ public class Singleton implements Serializable {
 			if (first) {
 				first = !first;
 			} else {
-				throw new RuntimeException("constructor can not be accessed");
+				throw new AssertionError("constructor can not be accessed");
 			}
 		}
 	}

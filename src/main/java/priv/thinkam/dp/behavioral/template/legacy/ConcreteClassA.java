@@ -1,4 +1,4 @@
-package priv.thinkam.dp.behavioral.template;
+package priv.thinkam.dp.behavioral.template.legacy;
 
 /**
  * @author thinkam
